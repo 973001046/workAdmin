@@ -1,0 +1,69 @@
+{
+  "name": "work-admin",
+  "version": "1.0.0",
+  "description": "admin",
+  "main": "index.js",
+  "scripts": {
+    "start": "node webpack/index.js --env=development",
+    "build": "node webpack/index.js --env=production",
+    "lint": "eslint ./ --fix --ext .ts,.tsx "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/973001046/workAdmin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/973001046/workAdmin/issues"
+  },
+  "homepage": "https://github.com/973001046/workAdmin#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/plugin-transform-runtime": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
+    "eslint": "^8.18.0",
+    "eslint-config-alloy": "^4.5.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss-loader": "^7.0.0",
+    "postcss-preset-env": "^7.7.1",
+    "postcss-short": "^5.0.0",
+    "prettier": "^2.7.1",
+    "responsive-loader": "^3.0.4",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.3",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-dev-server": "^4.9.2",
+    "webpack-merge": "^5.8.0",
+    "webpack-stats-plugin": "^1.0.3",
+    "webpackbar": "^5.0.2",
+    "yargs": "^17.5.1"
+  },
+  "dependencies": {
+    "core-js": "^3.23.0",
+    "g": "^2.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}

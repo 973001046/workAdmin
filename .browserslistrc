@@ -1,0 +1,6 @@
+chrome >= 50,
+firefox >= 50,
+ie >= 8,
+ios >= 8,
+safari >= 8,
+android >= 5.0
