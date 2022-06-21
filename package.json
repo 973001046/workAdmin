@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node webpack/index.js --env=development",
     "build": "node webpack/index.js --env=production",
-    "lint": "eslint ./ --fix --ext .ts,.tsx "
+    "lint": "eslint ./ --fix --ext .ts,.tsx ",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
     "mini-css-extract-plugin": "^2.6.0",
     "postcss-loader": "^7.0.0",
     "postcss-preset-env": "^7.7.1",
