@@ -6,4 +6,3 @@ const a = () => {
 const b = [1,1,2,3,4,8,34,10000]
 a()
 console.log(b.includes(400))
-const c = 1
