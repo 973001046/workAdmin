@@ -7,7 +7,16 @@ module.exports = {
         corejs: '3.22'
       }
     ],
-    '@babel/preset-react'
+    '@babel/preset-react',
+    '@babel/preset-typescript'
   ],
-  plugins: ['@babel/plugin-transform-runtime']
+  plugins: [
+    ["import", {
+      "libraryName": "antd",
+      "libraryDirectory": "es",
+      "style": "css" // `style: true` 会加载 less 文件
+    }],
+    '@babel/plugin-transform-runtime',
+    ['@babel/plugin-transform-typescript', { allowNamespaces: true }]
+  ]
 }

@@ -10,10 +10,14 @@ module.exports = {
   output: {
     path: path.resolve(workSpaceDir, './dist'),
     filename: "static/js/[chunkhash].bundle.js",
+    publicPath: '/',
     clean: true
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.ts', '.tsx', '.js', 'less'],
+    alias: {
+      '@src': path.resolve(workSpaceDir, './src')
+    }
   },
   module: {
     rules: [{
@@ -26,6 +30,18 @@ module.exports = {
               loader: MiniCssExtractPlugin.loader
             },
             'css-loader',
+            'postcss-loader'
+          ]
+        },
+        {
+          test: /\.less$/,
+          use: [
+            // 'style-loader',
+            {
+              loader: MiniCssExtractPlugin.loader
+            },
+            'css-loader',
+            'less-loader',
             'postcss-loader'
           ]
         },

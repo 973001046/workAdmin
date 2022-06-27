@@ -15,7 +15,7 @@ module.exports = {
   },
   rules: {
     semi: ['error', 'never'],
-    // 'no-console': 2,
-    'no-var': 2
+    'no-var': 2,
+    quotes: ['error', 'single']
   },
 }
