@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const NotFound = () => {
   return (
-    <div>
+    <div className='content-center'>
       <Result
         status="404"
         title="404"

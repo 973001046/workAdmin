@@ -7,7 +7,7 @@ import findRoute from '../utils/findRoute'
 
 const Breadcrumbs = () => {
   const { pathname } = useLocation()
-  const breadcrumbLists: Array<RouterType> = findRoute(Routers, pathname)
+  const breadcrumbLists: Array<RouterType> = findRoute(Routers[0].children, pathname)
 
   if (breadcrumbLists.length) {
     return (

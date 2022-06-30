@@ -1,12 +1,12 @@
 import React from 'react'
 import { Layout } from 'antd'
-import { useRoutes } from 'react-router-dom'
-import Routers from '../RouterConfig'
+import { Outlet } from 'react-router-dom'
 
 const Content = () => {
-  const RouterElement = useRoutes(Routers)
   return (
-    <Layout.Content className="content-layout">{RouterElement}</Layout.Content>
+    <Layout.Content className="content-layout">
+      <Outlet/>
+    </Layout.Content>
   )
 }
 
